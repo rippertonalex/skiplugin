@@ -1,0 +1,12 @@
+import requests
+
+url = "https://ski-resorts-and-conditions.p.rapidapi.com/v1/resort/whistler-blackcomb"
+
+headers = {
+	"X-RapidAPI-Key": "2af27d2031mshdbbed3beb00e9cbp17821ajsn261afb5f7638",
+	"X-RapidAPI-Host": "ski-resorts-and-conditions.p.rapidapi.com"
+}
+
+response = requests.get(url, headers=headers)
+
+print(response.json())
